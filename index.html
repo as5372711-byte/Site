@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Calibri, sans-serif;
+    }
+
+    /* === СЕКЦИЯ С РИСУНКОМ === */
+    .hero-banner {
+      /* Использование стандартного расширения .jpg */
+      background-image: url("Gemini_Generated_Image_8l89ys8l89ys8l89.jfif");
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
+    }
+
+    /* Затенённое полупрозрачное окошко */
+    .glass-card {
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Стиль скроллбара внутри карточки */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body class="flex flex-col w-screen h-screen bg-white">
+
+  <!-- ВЕРХНИЙ БЛОК С РИСУНКОМ (85% ВЫСОТЫ ЭКРАНА) -->
+  <section class="hero-banner relative w-full h-[85vh] border-b-2 border-gray-300 flex">
+    
+    <!-- ЛЕВАЯ ЧАСТЬ: Затенённое полупрозрачное окно с текстом -->
+    <div class="w-1/2 h-full p-8 flex items-center justify-center">
+      <div class="glass-card w-full h-full p-8 rounded-2xl border border-white/20 shadow-2xl flex flex-col justify-between overflow-y-auto custom-scrollbar">
+        <div>
+          <div class="flex items-center justify-between pb-4 mb-4 border-b border-white/20">
+            <h2 class="text-2xl font-bold text-white tracking-wide drop-shadow">Informácie</h2>
+            <span class="text-xs bg-white/20 text-white px-2.5 py-1 rounded border border-white/30 backdrop-blur-md">Služby</span>
+          </div>
+          
+          <!-- Весь словацкий текст -->
+          <div class="space-y-4 text-gray-100 text-sm leading-relaxed drop-shadow">
+            <p class="font-medium text-white/90 border-l-2 border-indigo-400 pl-3 py-1 bg-white/5 rounded-r">
+              Preberám na seba kompletnú personalistiku a mzdovú agendu — od prijatia zamestnanca, cez bežnú administratívu a ročné výkazy, až po ukončenie pracovného pomeru. Pomáham zamestnávateľom na Slovensku viesť personálnu agendu v súlade s legislatívou, bez pokút a zbytočných starostí.
+            </p>
+
+            <div class="pt-2">
+              <h3 class="text-base font-bold text-indigo-300 mb-2">1. Personalistika a zamestnávanie</h3>
+              <p class="mb-2 text-xs text-gray-300">Kompletný servis pre slovenských zamestnancov aj cudzincov (občanov EÚ a občanov tretích krajín):</p>
+              <ul class="list-disc list-inside space-y-1.5 pl-1 text-xs text-gray-200">
+                <li><strong class="text-white">Povolenia a úrady:</strong> Riešenie všetkých náležitostí s Úradom práce, sociálnych vecí a rodiny (ÚPSVaR) — hlásenia voľných pracovných miest, povolenia na zamestnanie, informačné karty.</li>
+                <li><strong class="text-white">Prijatie do zamestnania:</strong> Príprava pracovných zmlúv a dohôd (DPČ, DOVP, DPP), prihlasovanie zamestnancov do Sociálnej poisťovne a zdravotných poisťovní.</li>
+                <li><strong class="text-white">Bežná agenda a ukončenie:</strong> Zmeny zmlúv, evidencia dochádzky, ukončenie pracovného pomeru, príprava zápočtových listov a potvrdení.</li>
+              </ul>
+            </div>
+
+            <div class="pt-2 border-t border-white/10">
+              <h3 class="text-base font-bold text-indigo-300 mb-2">2. Mzdové účtovníctvo</h3>
+              <ul class="list-disc list-inside space-y-1 pl-1 text-xs text-gray-200">
+                <li>Spracovanie mesačných miezd, odvody na sociálne a zdravotné poistenie, preddavky na daň.</li>
+                <li>Príprava podkladov pre úhradu miezd a odvodov pre zamestnávateľa.</li>
+              </ul>
+            </div>
+
+            <div class="pt-2 border-t border-white/10">
+              <h3 class="text-base font-bold text-indigo-300 mb-2">3. Ročné uzávierky a výkazy</h3>
+              <ul class="list-disc list-inside space-y-1 pl-1 text-xs text-gray-200">
+                <li><strong class="text-white">Ročné zúčtovanie pre zamestnancov:</strong> Vyhotovenie ročného zúčtovania dane z príjmov fyzických osôb a ročného zúčtovania zdravotného poistenia.</li>
+                <li><strong class="text-white">Ročné výkazy zamestnávateľa:</strong> Príprava a podanie všetkých povinných ročných prehľadov a hlásení o vyplatených príjmoch pre daňový úrad a poisťovne.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 mt-6 border-t border-white/20 text-xs text-gray-300 flex justify-between">
+          <span>Personalistika & Mzdy</span>
+          <span>Slovensko</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ПРАВАЯ ЧАСТЬ: Открытая область -->
+    <div class="w-1/2 h-full relative p-8 flex flex-col justify-between">
+      <div class="inline-block bg-black/60 text-white text-xs px-3 py-1 rounded-full w-fit backdrop-blur-sm border border-white/10 self-end">
+        HR & Payroll
+      </div>
+      <div class="text-right">
+        <h1 class="text-white text-5xl font-extrabold tracking-wider drop-shadow-lg"></h1>
+        <p class="text-gray-200 text-sm mt-2 drop-shadow"></p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- НИЖНИЙ БЛОК С КОНТАКТАМИ (15% ВЫСОТЫ ЭКРАНА) -->
+  <footer class="w-full h-[15vh] grid grid-cols-2 bg-white divide-x-2 divide-gray-300">
+    
+    <!-- Мои контакты -->
+    <div class="px-8 py-3 flex flex-col justify-center">
+      <h3 class="text-sm font-bold text-indigo-900 mb-1 flex items-center gap-1.5">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+        МОИ КОНТАКТЫ
+      </h3>
+      <div class="grid grid-cols-2 gap-x-4 gap-y-0.5 text-xs">
+        <div><span class="font-semibold text-gray-700">Имя:</span> <span class="text-gray-600">Artem Syrotenko</span></div>
+        <div><span class="font-semibold text-gray-700">Email:</span> <span class="text-gray-600">as5372711@gmail.com</span></div>
+        <div><span class="font-semibold text-gray-700">Тел:</span> <span class="text-gray-600">+421 944 116 645</span></div>
+        <div><span class="font-semibold text-gray-700">Telegram:</span> <span class="text-gray-600">@Artwmass</span></div>
+      </div>
+    </div>
+
+    <!-- Контакты заказчика -->
+    <div class="px-8 py-3 flex flex-col justify-center">
+      <h3 class="text-sm font-bold text-indigo-900 mb-1 flex items-center gap-1.5">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        КОНТАКТЫ ЗАКАЗЧИКА
+      </h3>
+      <div class="grid grid-cols-2 gap-x-4 gap-y-0.5 text-xs">
+        <div><span class="font-semibold text-gray-700">Заказчик:</span> <span class="text-gray-600">Smile Idea</span></div>
+        <div><span class="font-semibold text-gray-700">Email:</span> <span class="text-gray-600">olhasi1707@gmail.com</span></div>
+        <div><span class="font-semibold text-gray-700">Тел:</span> <span class="text-gray-600">+7 (800) 111-22-33</span></div>
+        <div><span class="font-semibold text-gray-700">Адрес:</span> <span class="text-gray-600">m. Bratislava, ulica Bodrocka</span></div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
